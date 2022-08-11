@@ -1,0 +1,463 @@
+:root {
+    --gris: #353A3E;
+    --naranja: #E9990E;
+    --grisSuabe: #F0F0F0;
+    --dark: #242628;
+    --text: #454A4E;
+
+}
+
+/*---- LATO ----*/
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../assets/fonts/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+/*---- OPENSANS ----*/
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+/*---- POPPINS ----*/
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+/*---- POPPINS ----*/
+
+@font-face {
+    font-family: "Gobold-Bold-Italic";
+    src: url(../assets/fonts/gobold/Gobold-Bold-Italic.otf);
+}
+
+@font-face {
+    font-family: "Gobold-Bold";
+    src: url(../assets/fonts/gobold/Gobold-Bold.otf);
+}
+
+/*----------------------------*/
+
+/*-----  Navbar y NavTop  ----*/
+
+/*----------------------------*/
+
+/*NavTop*/
+
+.nav-top {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: var(--grisSuabe) !important;
+}
+
+.nav-top .login-menu, .nav-top .social-menu {
+    margin: 0;
+}
+
+.nav-top .login-menu a {
+    list-style: none !important;
+    color: black !important;
+}
+
+.nav-top .social-menu a {
+    color: var(--naranja);
+}
+
+/*Navbar*/
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.bg-gris {
+    background-color: var(--gris) !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: var(--gris);
+}
+
+.dropdown-menu>.dropdown-item:hover {
+    background-color: transparent !important;
+}
+
+.navbar-nav a {
+    color: white !important;
+    font-family: "Lato-Black";
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.navbar-nav a:hover {
+    color: var(--naranja) !important;
+}
+
+.img-responsive {
+    width: calc(200px + (400 - 200) * ((100vw - 300px) / (1600 - 300)));
+}
+
+a.active {
+    color: var(--naranja) !important;
+    background-color: transparent !important;
+}
+
+/*----------------------------*/
+
+/*--------  CAROUSEL  --------*/
+
+/*----------------------------*/
+
+.carousel-index h2.h2, .carousel-products h2.h2 {
+    font-size: calc(11px + (70 - 11) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Lato-Black";
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-contact h2.h2 {
+    font-size: calc(11px + (60 - 11) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Lato-Black";
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-index h2.no-shadow {
+    text-shadow: none !important;
+}
+
+/*----------------------------*/
+
+/*---------  Footer  ---------*/
+
+/*----------------------------*/
+
+.footer {
+    background-color: var(--dark);
+}
+
+.footer h4 {
+    color: var(--naranja);
+}
+
+.footer .info {
+    font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Lato-Regular";
+    color: white;
+    list-style: none !important;
+    padding: 0;
+}
+
+.footer .info a {
+    color: white;
+}
+
+.footer .fa-circle {
+    color: white;
+    line-height: inherit;
+}
+
+.footer .fa-facebook, .footer .fa-twitter, .footer .fa-instagram, .footer .fa-youtube {
+    color: var(--dark);
+}
+
+.politicas {
+    border-top: 1px solid #777777;
+}
+
+.politicas ul, a {
+    color: var(--naranja);
+    font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.politicas a:hover {
+    color: white;
+}
+
+.politicas p {
+    color: #CCCCCC;
+    font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*----------------------------*/
+
+/*----  CONTANIER SIZE  ------*/
+
+/*----------------------------*/
+
+.container-fluid {
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+/*----------------------------*/
+
+/*-------- TEXT SIZE ---------*/
+
+/*----------------------------*/
+
+h2.h2 {
+    font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Lato-Black";
+    color: var(--text);
+}
+
+h3.h3 {
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Lato-Black";
+    color: var(--text);
+}
+
+h4.h4 {
+    font-family: "Lato-Black";
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+p.lead {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--text);
+    font-weight: 400;
+    font-family: "Lato-Regular";
+}
+
+h2.h2 .r-sup {
+    font-size: calc(15px + (30 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+
+p.lead .r-sup {
+    font-size: calc(10px + (13 - 10) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+/*----------------------------*/
+
+/*-------- TEXT COLOR ---------*/
+
+/*----------------------------*/
+
+.text-black {
+    color: var(--dark) !important;
+}
+
+.text-naranja {
+    color: var(--naranja) !important;
+}
+
+/*----------------------------*/
+
+/*---------- BUTTONS ---------*/
+
+/*----------------------------*/
+
+.btn-orange {
+    background-color: var(--naranja);
+    color: white;
+    font-family: "Lato-Bold";
+    border-radius: 0;
+}
+
+.btn-orange-inverse {
+    background-color: white;
+    font-family: "Lato-Bold";
+    border-radius: 0;
+}
+
+.btn-send {
+    background-color: var(--naranja);
+    color: white;
+    font-family: "Lato-Bold";
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.btn-gris {
+    background-color: var(--gris);
+    color: white;
+    font-family: "Lato-Bold";
+    border-radius: 0;
+}
+
+/*----------------------------*/
+
+/*-------- BACKGROUND --------*/
+
+/*----------------------------*/
+
+.bg-negro {
+    background-color: var(--dark) !important;
+}
+
+.bg-negro p, .bg-negro h2 {
+    color: white !important;
+}
+
+.bg-gris p, .bg-gris h2, .bg-gris h3, .bg-gris h4 {
+    color: white !important;
+}
+
+.bg-gris-light {
+    background-color: var(--grisSuabe);
+}
+
+.bg-naranja {
+    background-color: var(--naranja);
+}
+
+.bg-naranja p, .bg-naranja h2, .bg-naranja h3 {
+    color: white !important;
+}
+
+/*----------------------------*/
+
+/*----------- LISTA ----------*/
+
+/*----------------------------*/
+
+.lista ul {
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--text);
+    font-weight: 400;
+    font-family: "Lato-Regular";
+    list-style-image: url("../img/icons/vineta.png");
+}
+
+
+/*----------------------------*/
+
+/*---------- basico1S --------*/
+
+/*----------------------------*/
+
+.vertical-orientation {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    margin: 0 !important;
+}
+
+.basic {
+    font-family: "OpenSans-Regular";
+    font-size: calc(27px + (35 - 27) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.basico1 h2.price {
+    font-family: "OpenSans-Regular";
+    font-size: calc(27px + (75 - 27) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--dark) !important;
+}
+
+.basico2 h2.price {
+    font-family: "OpenSans-Regular";
+    font-size: calc(27px + (75 - 27) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--naranja) !important;
+}
+
+.basico3 h2.price {
+    font-family: "OpenSans-Regular";
+    font-size: calc(27px + (75 - 27) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--naranja) !important;
+}
+
+.basico1 h3.price-subt, 
+.basico2 h3.price-subt,
+.basico3 h3.price-subt {
+    font-family: "OpenSans-Regular";
+    font-size: calc(18px + (35 - 18) * ((100vw - 300px) / (1600 - 300)));
+    color: white !important;
+}
+
+.basico1 p.lead,
+.basico2 p.lead,
+.basico3 p.lead {
+    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media (max-width: 992px) {
+    .basico1 .border-r-dark {
+        border-bottom: 2px solid var(--dark);
+    }
+    .basico2 .border-r-dark {
+        border-bottom: 2px solid var(--naranja);
+    }
+    .basico3 .border-r-dark {
+        border-bottom: 2px solid var(--naranja);
+    }
+}
+
+@media (min-width: 992px) {
+    .basico1 .border-r-dark {
+        border-right: 4px solid var(--dark);
+    }
+    .basico1 .border-l-dark {
+        border-left: 4px solid var(--dark);
+    }
+
+    .basico2 .border-r-dark {
+        border-right: 4px solid var(--naranja);
+    }
+    .basico2 .border-l-dark {
+        border-left: 4px solid var(--naranja);
+    }
+
+    .basico3 .border-r-dark {
+        border-right: 4px solid var(--naranja);
+    }
+    .basico3 .border-l-dark {
+        border-left: 4px solid var(--naranja);
+    }
+}
+
+.basico1 .btn-buy {
+    font-family: "Gobold-Bold";
+    font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+    font-style: italic;
+    background-color: white;
+    color: var(--dark);
+    border-radius: 0;
+}
+
+.basico2 .btn-buy {
+    font-family: "Gobold-Bold";
+    font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+    font-style: italic;
+    background-color: white;
+    color: var(--naranja);
+    border-radius: 0;
+}
+
+.basico3 .btn-buy {
+    font-family: "Gobold-Bold";
+    font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+    font-style: italic;
+    background-color: white;
+    color: var(--naranja);
+    border-radius: 0;
+}

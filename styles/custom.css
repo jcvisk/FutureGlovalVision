@@ -1,0 +1,325 @@
+:root {
+    --gris: #353A3E;
+    --naranja: #E9990E;
+    --grisSuabe: #F0F0F0;
+    --dark: #242628;
+}
+
+/*---- LATO ----*/
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../assets/fonts/Lato/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+/*---- OPENSANS ----*/
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+/*---- POPPINS ----*/
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+/*----------------------------*/
+/*---------  INDEX  ----------*/
+/*----------------------------*/
+
+/*--------  carousel  --------*/
+.carousel-index{
+    top: 30%;
+    bottom: 15%;
+    margin: auto;
+}
+
+/*----------  fgv  -----------*/
+.dividier-orange{
+    background-color: var(--naranja);
+    height: calc(200px + (250 - 200) * ((100vw - 300px) / (1600 - 300)));
+}
+.dividier-dark{
+    background-color: var(--dark);
+    height: calc(200px + (250 - 200) * ((100vw - 300px) / (1600 - 300)));
+}
+.future-global-vision{
+    margin-top: -33% !important;
+}
+.testimonials{
+    margin-top: -33% !important;
+}
+/*iPad*/
+@media (min-width: 768px) {
+    .dividier-orange{
+        background-color: var(--naranja);
+        height: calc(300px + (400 - 300) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .dividier-dark{
+        background-color: var(--dark);
+        height: calc(300px + (400 - 300) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .future-global-vision{
+        margin-top: -35% !important;
+    }
+    .testimonials{
+        margin-top: -35% !important;
+    }
+}
+/*iPad Pro*/
+@media (min-width: 992px) {
+    .dividier-orange{
+        background-color: var(--naranja);
+        height: calc(300px + (400 - 300) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .dividier-dark{
+        background-color: var(--dark);
+        height: calc(300px + (400 - 300) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .future-global-vision{
+        margin-top: -25% !important;
+    }
+    .testimonials{
+        margin-top: -25% !important;
+    }
+}
+/*pantallas grandes*/
+@media (min-width: 1200px) {
+    .dividier-orange{
+        background-color: var(--naranja);
+        height: calc(300px + (400 - 300) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .dividier-dark{
+        background-color: var(--dark);
+        height: calc(300px + (400 - 300) * ((100vw - 300px) / (1600 - 300)));
+    }
+    .future-global-vision{
+        margin-top: -18% !important;
+    }
+    .testimonials{
+        margin-top: -18% !important;
+    }
+
+    .testimonials .card{
+        width: 75% !important;
+    }
+}
+
+.bg-white-rounded {
+    background-color: white;
+    border-radius: 15px;
+    /*-- sombra --*/
+    -webkit-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.58);
+}
+
+/*------  Our Products  ------*/
+.our-products{
+    background-color: var(--grisSuabe);
+}
+/*---------  Contact  --------*/
+.contact img{
+    border-radius: 15px;
+}
+.fomr-contact{
+    background-color: white;
+    border-radius: 15px;
+    /*-- sombra --*/
+    -webkit-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.58);
+}
+.fomr-contact .form-header h3{
+    font-family: "Poppins-SemiBold";
+    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+.fomr-contact .label-desc{
+    font-family: "OpenSans-Regular";
+}
+.fomr-contact .form-control::placeholder{
+    font-family: "Poppins-Medium";
+    color: black;
+}
+.form-control:focus {
+    border-color: var(--naranja) !important;
+    box-shadow: 0 0 0 0.2rem rgba(247, 121, 19, 0.2) !important;
+}
+.contact-info p.lead a{
+    color: black !important;
+    font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+/*---------  Become  ---------*/
+.img-btn-join{
+    width: calc(50px + (100 - 50) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*----------------------------*/
+/*--------  PRODUCTS  --------*/
+/*----------------------------*/
+
+/*--------  carousel  --------*/
+.carousel-products{
+    top: 30%;
+    bottom: 30%;
+    margin: auto;
+}
+/*--------  Ef Tabs  ---------*/
+.ef-tabs{
+    background-color: var(--grisSuabe);
+    border-top: 25px solid var(--naranja);
+}
+/*-------- benefits  ---------*/
+.benefits span{
+    font-family: "Lato-Regular";
+}
+/*----  how does it work  ----*/
+.how-does{
+    background-color: var(--naranja);
+}
+.how-does h2,
+.how-does p{
+    color: white !important;
+}
+/*-----------  why  ----------*/
+.why{
+    background-color: var(--grisSuabe);
+}
+
+/*----------------------------*/
+/*-------  TECHNOLOGY  -------*/
+/*----------------------------*/
+
+/*------  catalizadora  ------*/
+.catalizadora{
+    background-color: var(--grisSuabe);
+    border-top: 25px solid var(--naranja);
+}
+/*-----  organometalica  -----*/
+.organometalica span{
+    color: var(--naranja);
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Lato-Black";
+}
+/*--------  espacial  --------*/
+.espacial{
+    background-color: var(--naranja);
+}
+.espacial p{
+    color: white !important;
+}
+
+/*----------------------------*/
+/*--------  CONTACT  ---------*/
+/*----------------------------*/
+
+/*--------  Carousel  --------*/
+.carousel-contact{
+    top: 30%;
+    bottom: 30%;
+    margin: auto;
+}
+/*--------  contact2  --------*/
+.contact2 .fa,
+.contact2 .fas{
+    color: var(--naranja);
+}
+.contact2 input::placeholder,
+.contact2 textarea::placeholder{
+    font-style: italic;
+}
+
+/*----------------------------*/
+/*-----  COMO FUNCIONA  ------*/
+/*----------------------------*/
+.eftabs{
+    background-color: var(--naranja);
+    
+}
+.eftabs p{
+    color: white !important;
+}
+.eftabs-dark{
+    background-color: var(--dark);
+}
+.eftabs-dark p{
+    color: white !important;
+}
+
+/*----------------------------*/
+/*--------  ABRAHAM  ---------*/
+/*----------------------------*/
+
+/*--------  aire  --------*/
+.aire{
+    border-top: 25px solid var(--naranja);
+}
+/*--------  presentar  --------*/
+.presentar{
+    background-color: var(--naranja);
+}
+.presentar p{
+    color: white !important;
+}
+/*--------  invitamos  --------*/
+.invitamos {
+    background-color: var(--grisSuabe);
+}
+
+/*--------  Ef golden  ---------*/
+.ef-golden{
+    border-top: 25px solid var(--naranja);
+}
+/*--------  opportunity  ---------*/
+.opportunity{
+    background-color: var(--grisSuabe);
+    border-top: 25px solid var(--naranja);
+}
+.opciones p.lead{
+    font-size: calc(17px + (26 - 17) * ((100vw - 300px) / (1600 - 300)));
+}
+.opciones p.lead>span{
+    color: var(--naranja) !important;
+    font-weight: bold !important;
+}
+h2.h2-big{
+    font-size: calc(90px + (130 - 90) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Lato-Black";
+    line-height: calc(80px + (120 - 80) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--text);
+}
+/*--------  Ef oilfusion  ---------*/
+.ef-oilfusion{
+    border-top: 25px solid var(--naranja);
+}
+
+/*-------  Testimoniasl  ----------*/
+.nav-testimonios .nav-link{
+    color: white;
+}
+.nav-testimonios .nav-link .active{
+    color: var(--naranja) !important;
+}
+.border-x-1{
+    border-right: 1px solid var(--naranja);
+    border-left: 1px solid var(--naranja);
+}
